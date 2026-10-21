@@ -65,7 +65,7 @@
 
 ## ☕ Support the Project / Buy Me a Coffee
 
-ApexNotch is **100% free, privacy-first, and open source**, crafted and maintained with love by **[Anvith Gopa](https://github.com/Anvithgopa)**.
+ApexNotch is **100% free, privacy-first, and open source**, crafted and maintained with love by **[Anvithgopa](https://github.com/Anvithgopa)**.
 
 If ApexNotch saves you time, supercharges your workflow, or brings joy with Notch Pets, please consider fueling future updates:
 
