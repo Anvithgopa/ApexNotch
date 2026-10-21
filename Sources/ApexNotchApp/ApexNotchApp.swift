@@ -69,9 +69,30 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         
         menu.addItem(NSMenuItem.separator())
         menu.addItem(NSMenuItem(title: "Settings...", action: #selector(openSettings), keyEquivalent: ","))
+        
+        let githubItem = NSMenuItem(title: "GitHub Repository...", action: #selector(openGitHub), keyEquivalent: "")
+        let coffeeItem = NSMenuItem(title: "☕ Support / Buy Me a Coffee...", action: #selector(openBuyMeACoffee), keyEquivalent: "")
+        menu.addItem(githubItem)
+        menu.addItem(coffeeItem)
+        
+        menu.addItem(NSMenuItem.separator())
+        let devItem = NSMenuItem(title: "ApexNotch v\(ApexNotchMeta.version) by Anvith Gopa", action: #selector(openGitHubProfile), keyEquivalent: "")
+        menu.addItem(devItem)
         menu.addItem(NSMenuItem(title: "Quit ApexNotch", action: #selector(quitApp), keyEquivalent: "q"))
         
         statusItem?.menu = menu
+    }
+    
+    @objc private func openGitHub() {
+        NSWorkspace.shared.open(ApexNotchMeta.githubRepoURL)
+    }
+    
+    @objc private func openBuyMeACoffee() {
+        NSWorkspace.shared.open(ApexNotchMeta.supportMeURL)
+    }
+    
+    @objc private func openGitHubProfile() {
+        NSWorkspace.shared.open(ApexNotchMeta.githubProfileURL)
     }
     
     @objc private func toggleNotch() {

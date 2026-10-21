@@ -31,6 +31,19 @@ public enum NotchDesign {
     public static let accentRed = Color(red: 1.0, green: 0.32, blue: 0.36)
 }
 
+/// Metadata and developer credits for ApexNotch
+public enum ApexNotchMeta {
+    public static let appName = "ApexNotch"
+    public static let version = "1.0.0"
+    public static let author = "Anvith Gopa"
+    public static let githubUsername = "Anvithgopa"
+    public static let githubRepoURL = URL(string: "https://github.com/Anvithgopa/ApexNotch")!
+    public static let githubProfileURL = URL(string: "https://github.com/Anvithgopa")!
+    public static let supportMeURL = URL(string: "https://payments.cashfree.com/forms/supportMe")!
+    public static let issuesURL = URL(string: "https://github.com/Anvithgopa/ApexNotch/issues")!
+    public static let releasesURL = URL(string: "https://github.com/Anvithgopa/ApexNotch/releases/latest")!
+}
+
 public struct GlassCardModifier: ViewModifier {
     var cornerRadius: CGFloat = 14
     var padding: CGFloat = 12

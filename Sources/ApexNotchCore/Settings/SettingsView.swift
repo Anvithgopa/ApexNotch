@@ -436,7 +436,7 @@ public struct SettingsView: View {
     
     // MARK: - About
     private var aboutSettings: some View {
-        VStack(spacing: 12) {
+        VStack(spacing: 14) {
             Image(systemName: "circle.circle.fill")
                 .font(.system(size: 48))
                 .foregroundColor(NotchDesign.accentCyan)
@@ -444,21 +444,85 @@ public struct SettingsView: View {
             Text("ApexNotch")
                 .font(.title.bold())
             
-            Text("Native macOS Notch Super Utility")
+            Text("Native macOS Dynamic Island & Notch Hub")
                 .font(.subheadline)
                 .foregroundColor(.secondary)
             
-            Text("Version 1.0.0 • Built with Swift, AppKit & SwiftUI")
+            Text("Version \(ApexNotchMeta.version) • Built with Swift, AppKit & SwiftUI")
                 .font(.caption)
                 .foregroundColor(.secondary)
+            
+            VStack(spacing: 4) {
+                Text("Developed by ")
+                    .font(.system(size: 13))
+                    .foregroundColor(.secondary)
+                +
+                Text("Anvith Gopa")
+                    .font(.system(size: 13, weight: .bold))
+                    .foregroundColor(NotchDesign.accentCyan)
+                
+                Button(action: {
+                    NSWorkspace.shared.open(ApexNotchMeta.githubProfileURL)
+                }) {
+                    Text("@\(ApexNotchMeta.githubUsername) on GitHub")
+                        .font(.caption)
+                        .foregroundColor(.blue)
+                }
+                .buttonStyle(.plain)
+            }
+            .padding(.top, 2)
             
             Divider()
                 .padding(.horizontal, 40)
             
-            Text("Engineered for MacBook Pro, MacBook Air, Studio Displays, and Apple Silicon Macs.")
-                .font(.system(size: 11))
-                .foregroundColor(.secondary)
-                .multilineTextAlignment(.center)
+            VStack(spacing: 10) {
+                Button(action: {
+                    NSWorkspace.shared.open(ApexNotchMeta.githubRepoURL)
+                }) {
+                    HStack(spacing: 8) {
+                        Image(systemName: "chevron.left.forwardslash.chevron.right")
+                        Text("View on GitHub (Source Code & Releases)")
+                    }
+                    .font(.system(size: 12, weight: .medium))
+                    .frame(width: 320, height: 32)
+                    .background(Color.white.opacity(0.1))
+                    .cornerRadius(8)
+                }
+                .buttonStyle(.plain)
+                
+                Button(action: {
+                    NSWorkspace.shared.open(ApexNotchMeta.supportMeURL)
+                }) {
+                    HStack(spacing: 8) {
+                        Text("☕")
+                        Text("Buy Me a Coffee / Support Development")
+                            .bold()
+                    }
+                    .font(.system(size: 12, weight: .semibold))
+                    .foregroundColor(.black)
+                    .frame(width: 320, height: 32)
+                    .background(Color(red: 1.0, green: 0.86, blue: 0.0))
+                    .cornerRadius(8)
+                }
+                .buttonStyle(.plain)
+                
+                Button(action: {
+                    NSWorkspace.shared.open(ApexNotchMeta.issuesURL)
+                }) {
+                    HStack(spacing: 8) {
+                        Image(systemName: "exclamationmark.bubble")
+                        Text("Report an Issue / Request Features")
+                    }
+                    .font(.system(size: 12))
+                    .foregroundColor(.secondary)
+                }
+                .buttonStyle(.plain)
+            }
+            
+            Text("Released under the MIT License • 100% Free & Open Source")
+                .font(.system(size: 10))
+                .foregroundColor(.secondary.opacity(0.8))
+                .padding(.top, 8)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .padding(20)

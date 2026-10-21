@@ -30,11 +30,44 @@
 
 ---
 
-## ☕ Support the Project
+## 📸 Screenshots & Live Previews
 
-ApexNotch is **100% free, privacy-first, and open source**. It is maintained with love and care for the Mac community.
+<div align="center">
+  <h4>🐾 Notch Mascot Pet on Desktop (CPU Speed & Performance Adaptive)</h4>
+  <img src="Screenshots/01_notch_pet_desktop.png" width="90%" alt="Notch Mascot Pet on Desktop" />
+  <br><br>
 
-If ApexNotch saves you time, supercharges your workflow, or brings joy with Notch Pets, please consider supporting ongoing development:
+  <table align="center" width="100%">
+    <tr>
+      <td width="50%" align="center">
+        <h4>🎵 Compact Music Capsule & Visualizer</h4>
+        <img src="Screenshots/02_compact_music_equalizer.png" width="100%" alt="Compact Music Equalizer" />
+      </td>
+      <td width="50%" align="center">
+        <h4>📊 11-in-1 Productivity Dashboard</h4>
+        <img src="Screenshots/03_dashboard_widgets.png" width="100%" alt="Productivity Dashboard" />
+      </td>
+    </tr>
+    <tr>
+      <td width="50%" align="center">
+        <h4>🗄️ File Shelf Drag & Drop Staging Zone</h4>
+        <img src="Screenshots/04_file_shelf_dropzone.png" width="100%" alt="File Shelf Staging" />
+      </td>
+      <td width="50%" align="center">
+        <h4>🌐 Embedded Quick Browser</h4>
+        <img src="Screenshots/05_quick_browser.png" width="100%" alt="Quick Browser" />
+      </td>
+    </tr>
+  </table>
+</div>
+
+---
+
+## ☕ Support the Project / Buy Me a Coffee
+
+ApexNotch is **100% free, privacy-first, and open source**, crafted and maintained with love by **[Anvith Gopa](https://github.com/Anvithgopa)**.
+
+If ApexNotch saves you time, supercharges your workflow, or brings joy with Notch Pets, please consider fueling future updates:
 
 <p align="center">
   <a href="https://payments.cashfree.com/forms/supportMe">
@@ -158,14 +191,15 @@ If you like this project, please consider giving it a ⭐️ **Star** on GitHub 
 
 ---
 
-## 📄 License
+## 👨‍💻 Author & Credits
 
-Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for more information.
+Developed with ❤️ by **[Anvith Gopa](https://github.com/Anvithgopa)**.
+
+- GitHub: [@Anvithgopa](https://github.com/Anvithgopa)
+- Support / Donate: [Buy Me a Coffee](https://payments.cashfree.com/forms/supportMe)
 
 ---
 
-<p align="center">
-  Crafted with ❤️ by <a href="https://github.com/Anvithgopa">Anvith Gopa</a>
-  <br>
-  <a href="https://payments.cashfree.com/forms/supportMe">☕ Buy Me a Coffee</a>
-</p>
+## 📄 License
+
+Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for more information.
