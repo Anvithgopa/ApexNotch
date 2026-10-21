@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>en</string>
+    <key>CFBundleExecutable</key>
+    <string>ApexNotch</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.apexnotch.app</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>ApexNotch</string>
+    <key>CFBundleDisplayName</key>
+    <string>ApexNotch</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>14.0</string>
+    <key>LSUIElement</key>
+    <true/>
+    <key>NSHighResolutionCapable</key>
+    <true/>
+    <key>NSSupportsAutomaticGraphicsSwitching</key>
+    <true/>
+    <key>NSCameraUsageDescription</key>
+    <string>ApexNotch needs camera access to provide a live quick mirror directly inside your notch interface. Video frames are never recorded or transmitted.</string>
+    <key>NSCalendarsUsageDescription</key>
+    <string>ApexNotch needs calendar access to display upcoming meetings and schedules in your notch dashboard.</string>
+    <key>NSRemindersUsageDescription</key>
+    <string>ApexNotch needs reminders access to view and check off tasks directly from your notch dashboard.</string>
+    <key>NSAppleEventsUsageDescription</key>
+    <string>ApexNotch requires Apple Events automation to read current track details and control playback for Apple Music and Spotify.</string>
+    <key>CFBundleIconFile</key>
+    <string>AppIcon</string>
+</dict>
+</plist>
